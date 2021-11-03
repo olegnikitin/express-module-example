@@ -1,7 +1,7 @@
 import {AccessControl} from "accesscontrol"
 const ac = new AccessControl();
 
-exports.roles = (function() {
+export default (function() {
     ac.grant("basic")
         .readOwn("profile")
         .updateOwn("profile")
